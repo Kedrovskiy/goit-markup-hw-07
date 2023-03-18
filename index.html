@@ -55,7 +55,85 @@
             </li>
           </ul>
         </address>
+       <button class="header-burger js-open-menu" type="button">
+<svg class="mobile-menu-burger-icon" width="29" height="18">
+<use href="./images/svg/icons.svg#icon-burger"></use>
+</svg>
+      </button>
       </div>
+    <div class="mobile-menu js-menu-container is-open">
+      <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-mobile-menu js-close-menu" width="8" height="8">
+        <use href="./images/svg/icons.svg#icon-close-model"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu-other">
+        <div>
+            <ul class="modal-window">
+              <li class=""><a class="nav-link" href="./index.html">Studio</a></li>
+              <li class="">
+                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class=""><a class="nav-link" href="#">Contacts</a></li>
+            </ul>
+        </div>
+
+        <div>
+          <address class="adress-container">
+            <ul class="dress-link-header">
+              <li class="item">
+                <a class="adress-link window" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="item">
+                <a class="adress-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            
+            </ul>
+          </address>
+
+          <ul class="footer-social window">
+            <li class="socials-item">
+              <a class="footer-link-svg nobile" href="#">
+                <svg class="footer-icon">
+                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials-item">
+              <a class="footer-link-svg nobile" href="#">
+                <svg class="footer-icon">
+                  <use href="./images/svg/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials-item">
+              <a class="footer-link-svg nobile" href="#">
+                <svg class="footer-icon">
+                  <use href="./images/svg/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials-item">
+              <a class="footer-link-svg nobile" href="#">
+                <svg class="footer-icon">
+                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+      
     </header>
 
     <main>
@@ -155,10 +233,10 @@
       <!-- Команда -->
       <section class="our-team">
         <div class="container">
- <h2 class="section-title">Our Team</h2>
+     <h2 class="section-title">Our Team</h2>
         <ul class="team">
           <li class="team-cards">
-            <img src="./images/img1.jpg" alt="Mark" width="264" height="260" />
+            <img class="team-photo" src="./images/img1.jpg" alt="Mark" width="100%" height="" />
             <div class="team-name">
               <h3 class="project-title">Mark Guerrero</h3>
               <p class="project-text">Product Designer</p>
@@ -199,7 +277,7 @@
           </li>
 
           <li class="team-cards">
-            <img src="./images/img2.jpg" alt="Tom" width="264" height="260" />
+            <img class="team-photo" src="./images/img2.jpg" alt="Tom" width="100%" height="" />
             <div class="team-name">
               <h3 class="project-title">Tom Ford</h3>
               <p class="project-text">Frontend Developer</p>
@@ -243,8 +321,7 @@
             <img
               src="./images/img3.jpg"
               alt="Camila"
-              width="264"
-              height="260"
+              width="100%" height=""
             />
             <div class="team-name">
               <h3 class="project-title">Camila Garcia</h3>
@@ -289,8 +366,7 @@
             <img
               src="./images/img4.jpg"
               alt="Daniel"
-              width="264"
-              height="260"
+              width="100%" height=""
             />
             <div class="team-name">
               <h3 class="project-title">Daniel Wilson</h3>
@@ -394,7 +470,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer">
+      <div class="container">
         <div>
           <a class="logo-white" href="./index.html">Web<span>Studio</span></a>
         <p class="footer-text">
@@ -402,7 +478,7 @@
           digital marketing & growth solutions.
         </p>
         </div>
-        <div>
+        <div class="footer-social-media">
         <p>Social media</p>
         <ul class="footer-social">
           <li class="socials-item">
@@ -458,8 +534,8 @@
       
      </footer>
     
-
-<div class="backdrop is-hidden" data-modal>
+ <!-- Modal -->
+<!-- <div class="backdrop is-hidden" data-modal>
 <div class="modal">
   <button type="button" class="modal-close-btn" data-modal-close>
   <svg class="modal-close-btn-icon-x" width="8" height="8">
@@ -498,8 +574,10 @@
 </form>
 
 </div>
-</div>
+</div> -->
+
 
       <script src="./js/modal.js"></script>
+      <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
