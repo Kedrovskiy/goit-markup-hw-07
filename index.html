@@ -61,8 +61,8 @@
 </svg>
       </button>
       </div>
-    <div class="mobile-menu js-menu-container is-open">
-      <button type="button" class="modal-close-btn" data-modal-close>
+    <div class="mobile-menu js-menu-container">
+      <button type="button" class="modal-close-btn js-close-menu" >
         <svg class="modal-mobile-menu js-close-menu" width="8" height="8">
         <use href="./images/svg/icons.svg#icon-close-model"></use>
         </svg>
@@ -217,13 +217,26 @@
           <h2 class="section-title">What are we doing</h2>
         <ul class="works-photo">
           <li>
-            <img src="./images/Rectangle71.jpg" alt="computer" width="360" />
+             <img
+    srcseet="./images/desc/doing/mac1x.jpg, ./images/desc/doing/mac@2x.jpg"
+    src="./images/desc/doing/mac1x.jpg"
+    alt="computer"
+    width="360"
+  />
           </li>
           <li>
-            <img src="./images/Rectangle72.jpg" alt="phone" width="360" />
+            <img
+    srcseet="./images/desc/doing/phones1x.jpg, ./images/desc/doing/phones@2x.jpg"
+    src="./images/desc/doing/phones1x.jpg"
+    alt="computer"
+    width="360"/>
           </li>
           <li>
-            <img src="./images/Rectangle73.jpg" alt="phone" width="360" />
+            <img
+    srcseet="./images/desc/doing/hand-phone1x.jpg, ./images/desc/doing/hand-phone@2x.jpg"
+    src="./images/desc/doing/hand-phone1x.jpg"
+    alt="computer"
+    width="360" />
           </li>
         </ul>
         </div>
@@ -236,7 +249,11 @@
      <h2 class="section-title">Our Team</h2>
         <ul class="team">
           <li class="team-cards">
-            <img class="team-photo" src="./images/img1.jpg" alt="Mark" width="100%" height="" />
+            <img
+    srcseet="./images/team/mark1x.jpg ./images/team/mark@2x.jpg"
+    src="./images/team/mark1x.jpg"
+    alt="Mark"
+    width="100%" height="" />
             <div class="team-name">
               <h3 class="project-title">Mark Guerrero</h3>
               <p class="project-text">Product Designer</p>
@@ -277,7 +294,11 @@
           </li>
 
           <li class="team-cards">
-            <img class="team-photo" src="./images/img2.jpg" alt="Tom" width="100%" height="" />
+            <img
+    srcseet="./images/team/tom1x.jpg ./images/team/tom@2x.jpg"
+    src="./images/team/tom1x.jpg"
+    alt="Tom"
+    width="100%" height="" />
             <div class="team-name">
               <h3 class="project-title">Tom Ford</h3>
               <p class="project-text">Frontend Developer</p>
@@ -318,10 +339,11 @@
           </li>
 
           <li class="team-cards">
-            <img
-              src="./images/img3.jpg"
-              alt="Camila"
-              width="100%" height=""
+             <img
+    srcseet="./images/team/camila1x.jpg ./images/team/camila@2x.jpg"
+    src="./images/team/camila1x.jpg"
+    alt="Camila"
+    width="100%" height=""
             />
             <div class="team-name">
               <h3 class="project-title">Camila Garcia</h3>
@@ -364,9 +386,10 @@
 
           <li class="team-cards">
             <img
-              src="./images/img4.jpg"
-              alt="Daniel"
-              width="100%" height=""
+    srcseet="./images/team/daniel1x.jpg ./images/team/daniel@2x.jpg"
+    src="./images/team/daniel1x.jpg"
+    alt="Daniel"
+    width="100%" height=""
             />
             <div class="team-name">
               <h3 class="project-title">Daniel Wilson</h3>
@@ -516,7 +539,7 @@
         
       </div>
 
-      <form name="contact-form-footer" autocomplete="off">
+      <form class="form-subscribe" name="contact-form-footer" autocomplete="off">
     <p>Subscribe</p>
 
 <div class="footer-contact">
@@ -535,7 +558,7 @@
      </footer>
     
  <!-- Modal -->
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
 <div class="modal">
   <button type="button" class="modal-close-btn" data-modal-close>
   <svg class="modal-close-btn-icon-x" width="8" height="8">
@@ -574,7 +597,7 @@
 </form>
 
 </div>
-</div> -->
+</div>
 
 
       <script src="./js/modal.js"></script>
