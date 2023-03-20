@@ -440,7 +440,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .hero-title {
-    font-size: 36px;
+    font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
@@ -517,22 +517,33 @@ a {
   gap: 24px;
 }
 
+.futures-list {
+  flex-basis: calc((100% - 24px) / 2);
+}
+
 @media screen and (max-width: 1158px) {
   .futures-info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
   }
 }
 
 @media screen and (max-width: 768px) {
   .futures-info {
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 72px 24px;
     justify-content: center;
     display: flex;
-    padding-bottom: 96px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .futures-info {
+    justify-content: stretch;
+  }
+  .futures-list {
+    flex-basis: 100%;
   }
 }
 
@@ -543,6 +554,7 @@ a {
 @media screen and (max-width: 768px) {
   .futures {
     padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 
@@ -567,10 +579,6 @@ a {
 .futures-icon {
   width: 64px;
   height: 64px;
-}
-
-.futures-list {
-  width: 264px;
 }
 
 .visually-hidden {
@@ -633,15 +641,21 @@ a {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer-text {
     margin-right: 24px;
   }
 }
 
+@media screen and (max-width: 428px) {
+  .footer-text {
+    margin-right: 0px;
+  }
+}
+
 .futures-title,
 .project-title {
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-future-title);
@@ -651,18 +665,12 @@ a {
 
 @media screen and (max-width: 768px) {
   .futures-title {
-    display: flex;
     font-size: 36px;
   }
 }
 
-/* .futures-info .futures-text {
-  width: 264px;
-} */
-
-@media screen and (max-width: 768px) {
-  .futures-info .futures-text {
-    max-width: 396px;
+@media screen and (max-width: 428px) {
+  .futures-title {
     text-align: center;
   }
 }
@@ -673,6 +681,12 @@ a {
   letter-spacing: 0.02em;
   color: var(--color-future-text);
   margin-top: 8px;
+}
+
+@media screen and (max-width: 320px) {
+  .futures-text {
+    width: 296px;
+  }
 }
 
 .section-title {
@@ -881,6 +895,12 @@ a {
 
 .customers-item {
   width: 168px;
+}
+
+@media screen and (max-width: 427px) {
+  .customers-item {
+    width: 128px;
+  }
 }
 
 .customers-link {
